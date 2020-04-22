@@ -1,0 +1,13 @@
+body{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    align-items: flex;
+}
+
+div{
+    
+    position: relative;    
+    margin: 3rem;
+}

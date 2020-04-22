@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "practicaParcial"
+    }
+  },
+  "defaultProject": "practicaParcial",
+  "cli": {
+    "analytics": false
+  }
 }

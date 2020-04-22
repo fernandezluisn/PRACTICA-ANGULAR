@@ -1,0 +1,22 @@
+<div> <h1>Lista de productos</h1>  
+
+    <table >
+    <thead >
+      <tr >
+        <th > ID </th >
+        <th > Descripción </th >
+        <th > Tipo </th >
+        <th > Imagen </th >
+      </tr >
+    </thead >
+    <tbody >
+      <tr  *ngFor= "let producto of listadoProductos">
+        <td > {{producto.id}} </td >
+        <td > {{producto.descripcion}} </td >
+        <td > {{producto.tipo}} </td >
+        <td><img src="{{producto.rutaDeFoto}}" alt=""></td >
+      </tr >
+     
+    </tbody >
+  </table >
+</div>
