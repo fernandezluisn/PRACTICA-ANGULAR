@@ -1,6 +1,6 @@
 <div> <h1>Lista de productos</h1>  
 
-    <table >
+    <table>
     <thead >
       <tr >
         <th > ID </th >
@@ -14,7 +14,8 @@
         <td > {{producto.id}} </td >
         <td > {{producto.descripcion}} </td >
         <td > {{producto.tipo}} </td >
-        <td><img src="{{producto.rutaDeFoto}}" alt=""></td >
+        <td><mat-card><img mat-card-m-image src="{{producto.rutaDeFoto}}" alt=""></mat-card></td >
+        <td><button mat-raised-button color="warn" (click)="eliminarFila(producto)">Eliminar</button></td>
       </tr >
      
     </tbody >

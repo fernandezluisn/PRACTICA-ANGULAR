@@ -12,9 +12,19 @@ export class ListadoComponent implements OnInit {
   @Input() listadoProductos: Producto[];
   
   
-  constructor() { }
+  
 
-  ngOnInit(): void {
+  constructor() { }
+  
+  eliminarFila(prod: Producto){ 
+    var i=this.listadoProductos.indexOf(prod);
+    this.listadoProductos.splice(i, 1);
+  }
+  
+
+  ngOnInit(): void { 
+    
   }
 
+  
 }
